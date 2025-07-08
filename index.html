@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio | Jenny Aulia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #FF7A00;
+      --background: #fffdfb;
+      --text: #222;
+      --gray: #f2f2f2;
+    }
+
+    * {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+    .navbar {
+      background-color: #ffffff;
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      color: var(--primary) !important;
+    }
+
+    .nav-link {
+      color: var(--text);
+      font-weight: 500;
+      margin-right: 20px;
+    }
+
+    .nav-link:hover {
+      color: var(--primary);
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 60px 0;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .hero-img {
+      max-width: 350px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .section-title {
+      font-weight: 700;
+      text-align: center;
+      color: var(--primary);
+      margin-bottom: 40px;
+    }
+
+    .card {
+      border: none;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      border: none;
+      border-radius: 6px;
+      padding: 10px 20px;
+    }
+
+    .btn-primary:hover {
+      background-color: #e56f00;
+    }
+
+    footer {
+      background-color: #111;
+      color: #ccc;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    footer a {
+      color: #ccc;
+      margin: 0 10px;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    footer a:hover {
+      color: var(--primary);
+    }
+
+    .badge-skill {
+      background-color: var(--gray);
+      border-radius: 20px;
+      padding: 8px 16px;
+      margin: 5px;
+      display: inline-block;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#">Jenny Aulia</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Project</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero container py-5">
+  <div class="col-md-6 mb-4">
+    <h1>Halo, I'm Jenny Aulia Az Zahra</h1>
+    <p class="lead">Junior Web Developer | UI/UX Enthusiast | Undergraduate Student</p>
+    <a href="#projects" class="btn btn-primary mt-3">Project</a>
+  </div>
+  <div class="col-md-5">
+    <img src="images/fotoprofil.png" class="hero-img" alt="Foto Profil">
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="container py-5">
+  <h2 class="section-title">About Me</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+      <p>I am a 5th-semester Information Systems student at UPN "Veteran" Jakarta with a strong interest in UI/UX design, web development, data management, and mobile-based applications. Through various academic projects and organizational activities, I have gained hands-on experience as a full-stack developer, covering areas such as user interface design, REST API development, database integration, and CRUD feature implementation.
+        In the field of UI/UX, I enjoy creating intuitive, user-centered designs that enhance usability and user satisfaction. I am familiar with design thinking principles, wireframing, prototyping, and usability testing, primarily using tools like Figma.
+        I am also proficient in technologies such as React, PHP, MySQL, Android Studio, Looker Studio, and Google Colab. I have built several applications, including a web-based student management system and a mobile attendance app.
+        I possess strong problem-solving skills, attention to detail, and the ability to work both independently and in a collaborative team environment. I am eager to deepen my experience and contribute to impactful technology solutions, especially in the areas of UI/UX design and full-stack development.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="bg-light py-5">
+  <div class="container">
+    <h2 class="section-title">Project</h2>
+    <div class="row g-4">
+
+      <!-- Project Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/inventory.png" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Inventory Laptop</h5>
+            <p class="card-text">Aplikasi stok barang berbasis React dan Bootstrap.</p>
+            <a href="https://github.com/uhuycihuy/UAS-WEB-LANJUT" class="btn btn-primary btn-sm">Github</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/fikspresif.png" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">FIKSpresif</h5>
+            <p class="card-text">Aplikasi Android untuk aspirasi mahasiswa menggunakan API.</p>
+            <a href="https://github.com/uhuycihuy/FIKSpresif" class="btn btn-primary btn-sm">Github</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/breastcancer.PNG" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Klasifikasi Tumor</h5>
+            <p class="card-text">Machine learning untuk klasifikasi tumor dari dataset medis.</p>
+            <a href="https://github.com/jennyaaz/miniprojectdataset" target="_blank" class="btn btn-primary btn-sm">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/lostnfound.png" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Website Lost and Found FIK UPNVJ</h5>
+            <p class="card-text">Website yg dirancang untuk membantu pengguna dalam melaporkan dan mengklaim barang hilang di lingkungan FIK UPNVJ</p>
+            <a href="https://github.com/uhuycihuy/FIKSpresif" target="_blank" class="btn btn-primary btn-sm">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/bookify.png" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Bookify</h5>
+            <p class="card-text">Design App perpustakaan digital </p>
+            <a href="https://www.figma.com/proto/fy6dYqzuyzeSGKxyrZMC9L/UAS-PIMK_2310501057_JENNY-AULIA-AZ-ZAHRA_E-LIBRARY-BOOKIFY?node-id=67-424&starting-point-node-id=67%3A424" target="_blank" class="btn btn-primary btn-sm">Prototype</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/globalnav.png" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Global Navigation</h5>
+            <p class="card-text">Design App perjalanan wisata dengan fitur track stats</p>
+            <a href="https://www.figma.com/proto/xSrKyRft4AhGd0ryhToscT/IMK-PROJECT?node-id=0-1&p=f&t=MYdzjCvlPIOUuJt7-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=46%3A568" target="_blank" class="btn btn-primary btn-sm">Prototype</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/develop.PNG" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">D3VELOPER,  Website Company Profile</h5>
+            <p class="card-text">Website Company Profile Himpunan Mahasiswa D3 Sistem Informasi FIK UPNVJ</p>
+            <a href="https://himad3si.github.io/company-profile/" target="_blank" class="btn btn-primary btn-sm">Link Website</a>
+            <a href="https://github.com/himad3si/company-profile" target="_blank" class="btn btn-primary btn-sm">Github</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/glowskin.png" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">GlowSkin</h5>
+            <p class="card-text">Design website deteksi kulit, rekomendasi skincare untuk kulit bermasalah.</p>
+            <a href="https://www.figma.com/proto/8m8VyRo7pxtfggCYLIClm6/GLOWSKIN?node-id=1-2&starting-point-node-id=1%3A2" target="_blank" class="btn btn-primary btn-sm">Prototype</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="container py-5">
+  <h2 class="section-title">Skills</h2>
+  <div class="text-center">
+    <span class="badge-skill">HTML</span>
+    <span class="badge-skill">CSS</span>
+    <span class="badge-skill">JavaScript</span>
+    <span class="badge-skill">Bootstrap</span>
+    <span class="badge-skill">React</span>
+    <span class="badge-skill">PHP</span>
+    <span class="badge-skill">MySQL</span>
+    <span class="badge-skill">Android Studio</span>
+    <span class="badge-skill">Figma</span>
+    <span class="badge-skill">Phyton</span>
+    <span class="badge-skill">Google Colab</span>
+    <span class="badge-skill">Looker Studio</span>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <section id="contact" class="container py-5">
+  <div>
+    <a href="https://github.com/jennyaaz" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/jenny-aulia-a795a525b" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:jennyaulia780@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://instagram.com/jennyaaz_" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://discord.com/users/jennyaaz" target="_blank" aria-label="Discord"><i class="fab fa-discord"></i></a>
+  </div>
+  <p class="mt-3">&copy; 2025 Jenny Aulia</p>
+</footer>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
